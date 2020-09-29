@@ -13,9 +13,9 @@ def saturdays_bank_transactions(transations) -> (float, float):
     savings += (transations[0] * 0.15)
     
     checking += transations[1]
-    
+
     checking += transations[2]
-    
+
     checking += transations[3]
 
     checking += (transations[4] * 0.85)

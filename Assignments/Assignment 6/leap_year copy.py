@@ -23,7 +23,7 @@ def leap_year(year):
         print("Is a leap year")
 
     else:
-        print("Is not a leap year")
+        print("Not a leap year")
    
 
 if __name__ == "__main__":

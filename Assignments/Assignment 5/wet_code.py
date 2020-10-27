@@ -3,7 +3,7 @@
 # I want you to accomplish this by making functions where you see repeated code. 
 # Some things to note. When we have a positive number that gets split up and 85% goes into checking and 15% goes into savings. 
 # All negative numbers gets taken out of the checking account.
-
+ 
 
 def saturdays_bank_transactions(transactions):
     savings = 1096.25

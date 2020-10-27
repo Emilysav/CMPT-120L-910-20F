@@ -16,17 +16,14 @@ def leap_year(year):
     remainder3 = year % 400
     print(remainder1, remainder2, remainder3)
 
-    for year in years: 
-        if remainder1 == 0 and remainder2 == 0 and remainder3 == 0:
-            print("This is a leap year")
+    if remainder1 == 0 and remainder2 == 0 and remainder3 == 0:
+        print("This is a leap year")
 
-        elif remainder1 == 0 and remainder2 != 0:
-            print("This is a leap year")
+    elif remainder1 == 0 and remainder2 != 0:
+        print("This is a leap year")
 
-        else:
-            print("This is not a leap year")
-
-    
+    else:
+        print("This is not a leap year")
    
 
 if __name__ == "__main__":

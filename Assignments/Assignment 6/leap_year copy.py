@@ -17,13 +17,13 @@ def leap_year(year):
     print(remainder1, remainder2, remainder3)
 
     if remainder1 == 0 and remainder2 == 0 and remainder3 == 0:
-        print("This is a leap year")
+        print("Is a leap year")
 
     elif remainder1 == 0 and remainder2 != 0:
-        print("This is a leap year")
+        print("Is a leap year")
 
     else:
-        print("This is not a leap year")
+        print("Is not a leap year")
    
 
 if __name__ == "__main__":

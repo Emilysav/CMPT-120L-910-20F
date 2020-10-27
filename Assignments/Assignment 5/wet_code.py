@@ -5,36 +5,19 @@
 # All negative numbers gets taken out of the checking account.
 
 
-def saturdays_bank_transactions(transations) -> (float, float):
+def saturdays_bank_transactions(transactions):
     savings = 1096.25
     checking = 1590.80
 
-    checking += (transations[0] * 0.85)
-    savings += (transations[0] * 0.15)
-    
-    checking += transations[1]
-
-    checking += transations[2]
-
-    checking += transations[3]
-
-    checking += (transations[4] * 0.85)
-    savings += (transations[4] * 0.15)
-    
-    checking += (transations[5] * 0.85)
-    savings += (transations[5] * 0.15)
-
-    checking += transations[6]
-    
-    checking += transations[7]
-    
-    checking += transations[8]
-    
-    checking += transations[9]
-    
-    checking += transations[10]
+    for transaction in transactions:
+        if transaction > 0:
+            checking += (transaction * 0.85)
+            savings += (transaction * 0.15)
+        elif transaction < 0:
+            checking += transaction
 
     return checking, savings
+
 
 if __name__ == "__main__":
     transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]

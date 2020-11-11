@@ -13,9 +13,9 @@ def sum_2d_array(two_d_array):
     
     for row in two_d_array:
         new_row = sum(row)  
-        print(new_row)
-        
-   
+        newest = str(new_row)
+     
+     return newest
     pass
 
 if __name__ == "__main__":

@@ -10,14 +10,12 @@
    
 
 def sum_2d_array(two_d_array):
-    
+    ar = []
     for row in two_d_array:
-        new_row = sum(row) 
-        print(new_row)
-     
-     
-    
-    pass
+        print(row)
+        ar.append(sum(row))
+    return ar
+
 
 if __name__ == "__main__":
     two_d_array = [

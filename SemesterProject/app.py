@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask
+from Flask import render_template
+from Flask import logging
 
 app=Flask(__name__)
 
@@ -19,9 +21,9 @@ def connect():
 def dog():
     return render_template('mydog.html', title='Mitzy!')
 
-@app.route('/say something')
-def chat():
-    return render_template('chat.html', title='Say Something!')
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(debug=True)

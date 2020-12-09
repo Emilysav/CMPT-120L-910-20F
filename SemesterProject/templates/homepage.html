@@ -1,8 +1,8 @@
 {% extends 'layouts.html' %}
 
 {% block content %}
-<div class="container-md">
-<div class="card text-center">
+  <div class="container-md">
+  <div class="card text-center">
     <div class="card-header">
       The "About Me" section
     </div>
@@ -11,10 +11,12 @@
       <p class="card-text">Travels, Hobbies, Interests, and Favorites</p>
       <a href="#" class="btn btn-primary">Who am I?</a>
     </div>
-</div>
-</div>
+  </div>
+  </div>
 
-<div class="container-md">
+  <br>
+
+  <div class="container-md">
   <div class="card text-center">
       <div class="card-header">
         The "Connect" section
@@ -27,6 +29,8 @@
   </div>
   </div>
 
+  <br>
+
   <div class="container-md">
     <div class="card text-center">
         <div class="card-header">
@@ -38,9 +42,11 @@
           <a href="#" class="btn btn-primary">Join me!</a>
         </div>
     </div>
-    </div>
+  </div>
+
+  <br>
    
-<div class="container-md">
+  <div class="container-md">
   <div class="card text-center">
       <div class="card-header">
         The "Say Something!" section
@@ -52,9 +58,7 @@
       </div>
   </div>
   </div>
-
-
-
+  
 <script src="{{url_for('static',filename='main.js')}}"></script>
 {% endblock content %}
 

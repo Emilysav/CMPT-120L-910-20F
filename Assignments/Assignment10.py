@@ -1,16 +1,19 @@
 import argparse
+import logging 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-r", "--reverse", help="This will reverse the order of the array")
-parser.add_argument("number", help="This number will print from one to the number")
+parser.add_argument("-s", help = "This will help find the summnation", action = "store_true")
+parser.add_argument("number", help= "This will be the number imputed")  
 args = parser.parse_args()
 
-def array_of_numbers(number):
-    arr = []
+logger = logging.getLogger()
+logging.basicConfig(level = logging.DEBUG, format = f'%(asctime)s %(levelname)s : %(message)s')
+
+def notation(number):
+    n = 0
     for index in range(number + 1):
-       arr = sum(arr.append(index))
+        n += index
+    return n
 
-    return arr
-
-
-
+sigma_sum = notation(int(args.number))
+logging.warning(sigma_sum)

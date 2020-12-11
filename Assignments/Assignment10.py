@@ -3,7 +3,7 @@ import logging
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", help = "This will help find the summnation", action = "store_true")
-parser.add_argument("number", help= "This will be the number imputed")  
+parser.add_argument("number", help= "This is the number imputed")  
 args = parser.parse_args()
 
 logger = logging.getLogger()

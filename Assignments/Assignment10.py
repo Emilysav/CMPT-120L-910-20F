@@ -15,5 +15,4 @@ def notation(number):
         n += index
     return n
 
-sigma_sum = notation(int(args.number))
-logging.warning(sigma_sum)
+logging.warning(notation(int(args.number)))

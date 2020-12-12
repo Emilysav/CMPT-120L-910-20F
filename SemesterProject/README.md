@@ -12,4 +12,4 @@
     The Site is all set up in the app.py file to be immediatly run without entering the terminal. OR if the terminal is preferred, using the terminal is as simple of double check FLASK_APP=app.py by entering 'echo FLASK_APP' if it is set up enter FLASK run. and the server will start running. 
 
 ## Installation
-    
+    > Flask. Flask must be installed to run this server
